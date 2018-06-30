@@ -1,0 +1,48 @@
+
+@import "vars";
+@import "@material/button/mdc-button.scss";
+
+.btn-primary {
+    @extend .mdc-button ;
+    @extend .mdc-theme--primary-bg !optional;
+    color:$mdc-text-color !important;
+    // @extend .mdc-theme--text-secondary-on-primary !optional;
+    // @include mdc-states( $mdc-theme-secondary);
+    @include mdc-states( $btn-primary-ripple-color);
+    
+}
+.btn-primary-light{
+    @extend .mdc-button ;
+    @extend .mdc-theme--primary-light-bg !optional;
+    color:$mdc-text-color !important;
+    @include mdc-states( lighten( $mdc-theme-primary, 5%));
+    
+
+    // @extend .mdc-theme--text-secondary-on-primary !optional;
+    // @include mdc-states( $mdc-theme-secondary );
+    
+}
+.btn-secondary {
+    @extend .mdc-button ;
+    @extend .mdc-theme--secondary-bg !optional;
+    color:$mdc-text-color !important;
+    // @extend .mdc-theme--text-primary-on-secondary !optional;
+    @include mdc-states( $btn-primary-ripple-color);
+    
+}
+.btn-secondary-dark {
+    @extend .mdc-button ;
+    background: darken($mdc-theme-secondary , 10%);
+    color:lighten($mdc-theme-secondary, 50%) !important;
+    // @extend .mdc-theme--text-primary-on-secondary !optional;
+    @include mdc-states( $btn-primary-ripple-color);
+    
+}
+
+.btns-ins {
+    @extend .mdc-elevation--z3 !optional;
+}
+
+.btns-rounded {
+    @include mdc-button-corner-radius( 25px);
+}

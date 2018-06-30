@@ -1,0 +1,14 @@
+@import '@material/card/mdc-card.scss';
+@import '@material/elevation/mdc-elevation.scss';
+
+.df-card{
+    @extend .mdc-card;
+    // @extend .mdc-card--stroked;
+}
+.ins-card{
+    @extend .mdc-card;
+    &:hover{
+        @extend .mdc-elevation--z19;
+        @extend .mdc-elevation-transition;
+    }
+}

@@ -1,0 +1,17 @@
+@import "@material/textfield/mdc-text-field" ;
+
+
+.ins-field{
+    @extend .mdc-text-field;
+    @extend .mdc-text-field--upgraded;
+    label{
+        bottom:20% !important;
+    }
+    
+}
+.field-1x{
+    height: 35px !important;
+    label{
+        bottom: 3px !important;
+    }
+}

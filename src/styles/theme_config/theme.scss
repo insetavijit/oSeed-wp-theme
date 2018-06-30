@@ -1,0 +1,30 @@
+
+@import "@material/theme/mdc-theme";
+
+body{
+    background : $theme-bg;
+    color:$mdc-theme-secondary;
+}
+ul{
+    padding: 0;
+}
+section.child {
+    padding: 0em 5em;
+}
+section.saparate{
+    padding: 5em 0em;
+}
+
+
+.insLF{
+    font-weight: lighter;
+}
+em {@extend .insLF ; }
+.block {
+    min-height: 4em;
+}
+.btns {
+    font-size: 10px !important ;
+    padding: 0em 1.5em !important;
+}
+
